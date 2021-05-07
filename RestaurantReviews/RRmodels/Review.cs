@@ -1,23 +1,21 @@
-namespace RRmodels
+namespace RRModels
 {
-    public class Reviews
+    public class Review
     {
-
         /// <summary>
-        /// This described the numerican value of the rating of the restaurant
+        /// This describes the overall numeric rating of a restaurant
         /// </summary>
         /// <value></value>
         public int Rating { get; set; }
-
         /// <summary>
-        /// This described the reasoning for the given Rating value based on experience
+        /// Verbose description of the dining experience
         /// </summary>
         /// <value></value>
         public string Description { get; set; }
 
         public override string ToString()
         {
-            return $"\n\t Rating: {Rating} \n\t Description: {Description}";
+            return $"\t Rating: {Rating} \n\t Description: {Description}";
         }
     }
 }
